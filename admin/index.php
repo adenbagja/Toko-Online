@@ -1,7 +1,7 @@
 <?php 
 session_start();
     //koneksi ke database
-   $koneksi = new mysqli("localhost", "root", "", "e-commerce");
+   $koneksi = new mysqli("localhost", "root", "", "a");
 
    //redirect bila belum login
    if (!isset($_SESSION['admin'])) {

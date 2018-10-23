@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$koneksi = new mysqli("localhot", "root", "", "e-commerce");
+$koneksi = new mysqli("localhot", "root", "", "a");
  ?>
 
  //jika tidak ada session login maka redirect ke login.php

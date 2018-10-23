@@ -1,13 +1,13 @@
 <?php 
 session_start();
-$koneksi = new mysqli("localhost", "root", "", "e-commerce");
+$koneksi = new mysqli("localhost", "root", "", "a");
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Login Pelanggan</title>
-	<link rel="stylesheet" type="text/css" href="admin/assets/css/bootsrap.css">
+	<link rel="stylesheet" type="text/css" href="admin/assets/css/bootstrap.css">
 </head>
 <body>
 
@@ -37,16 +37,16 @@ $koneksi = new mysqli("localhost", "root", "", "e-commerce");
 						<h3 class="panel-title">Login Pelanggan</h3>
 					</div>
 					<div class="panel-body">
-						<form class="post">
+						<form method="post">
 							<div class="form-group">
 								<label>Email</label>
-								<input type="email" name="email" class="form-control">
+								<input type="email" class="form-control" name="email" >
 							</div>
-							<div class="form-control">
+							<div class="form-group">
 								<label>Password</label>
-								<input type="password" name="password" class="form-control">
+								<input type="password" class="form-control name="password" ">
 							</div>
-							<button class="btn btn-primary" name="login">login</button>
+							<button class="btn btn-primary" name="login" >login</button>
 						</form>
 					</div>
 				</div>

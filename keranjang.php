@@ -1,11 +1,11 @@
 <?php 
 session_start();
 
-echo "<pre>";
-print_r($_SESSION['keranjang']);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_SESSION['keranjang']);
+// echo "</pre>";
 //koneksi
-$koneksi = new mysqli("localhost", "root", "", "e-commerce");
+$koneksi = new mysqli("localhost", "root", "", "a");
 
  ?>
 
@@ -50,13 +50,13 @@ $koneksi = new mysqli("localhost", "root", "", "e-commerce");
 				</tr>
 			</thead>
 			<tbody>
-				$nomor = 1;
-				<?php foreach ($_SESSION['keranjang'] as id_produk => jumlah):  ?>
+				<?php $nomor = 1;  ?>
+				<?php foreach ($_SESSION['keranjang'] as $id_produk => $jumlah):  ?>
 					<!-- Menampilkan produk yg sedang dipereulangkan -->
 					<?php  
 					$ambil = $koneksi->query("SELECT * FROM produk WHERE id_produk='$id_produk' ");
 					$pecah = $ambil ->fetch_assoc();
-					$subharga = $pecah["harga_produk"]*jumlah;
+					$subharga = $pecah["harga_produk"]* $jumlah;
 					
 					?>
 				<tr>

@@ -1,7 +1,7 @@
 <?php
 //script connection
 session_start();
-$koneksi = new mysqli("localhost", "root", "", "e-commerce");
+$koneksi = new mysqli("localhost", "root", "", "a");
 ?>
 
 <!DOCTYPE html>
