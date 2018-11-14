@@ -18,7 +18,7 @@
 			<td><?php echo $nomor; ?></td>
 			<td><?php echo $pecah['nama_pelanggan'] ?></td>
 			<td><?php echo $pecah['email_pelanggan'] ?></td>
-			<td><?php echo $pecah['tlp_pelanggan'] ?></td>
+			<td><?php echo $pecah['telepon_pelanggan'] ?></td>
 			<td>
 				<a href="" class="btn btn-danger">hapus</a>
 			</td>

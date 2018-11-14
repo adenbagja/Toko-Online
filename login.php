@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$koneksi = new mysqli("localhost", "root", "", "a");
+include 'config/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,6 @@ $koneksi = new mysqli("localhost", "root", "", "a");
 				<?php else: ?>
 					<li><a href="login.php">Login</a></li>	
 				<?php endif ?>
-				<li><a href="logib.php">Login</a></li>
 				<li><a href="checkout.php">Checkout</a></li>
 			</ul>
 		</div>
@@ -44,7 +43,7 @@ $koneksi = new mysqli("localhost", "root", "", "a");
 							</div>
 							<div class="form-group">
 								<label>Password</label>
-								<input type="password" class="form-control name="password" ">
+								<input type="password" class="form-control" name="password" ">
 							</div>
 							<button class="btn btn-primary" name="login" >login</button>
 						</form>

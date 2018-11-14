@@ -1,7 +1,7 @@
 <?php
 //script connection
 session_start();
-$koneksi = new mysqli("localhost", "root", "", "a");
+include '../config/config.php';
 ?>
 
 <!DOCTYPE html>
